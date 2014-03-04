@@ -1,28 +1,28 @@
 class FizzBuzz
 
-	def convert(start, finish)
+  def convert(start, finish)
 		
-		result = ''
+    result = ''
 		
-		(start..finish).each do |num|
-			result << fizzle(num) + " "
-		end
-		result.strip!
+    (start..finish).each do |num|
+      result << fizzle(num) + " "
+    end
+    result.strip!
 		
-		return result
-	end
+    return result
+  end
 
-	def fizzle(num)
+  def fizzle(num)
 		
-		if (num % 3 == 0) || (num % 5 == 0)
-			result = ''
-			result << (num % 3 == 0 ? 'Fizz' : '')
-			result << (num % 5 == 0 ? 'Buzz' : '')
-			return result
-		end
+    if (num % 3 == 0) || (num % 5 == 0)
+      result = ''
+      result << (num % 3 == 0 ? 'Fizz' : '')
+      result << (num % 5 == 0 ? 'Buzz' : '')
+      return result
+    end
 
-		return num.to_s
-	end
+    return num.to_s
+  end
 
 end
 
